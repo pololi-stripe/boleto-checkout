@@ -3,7 +3,8 @@
 Stripe Checkout is the fastest way to get started with payments. Included are some basic build and run scripts you can use to start up the application.
 
 ## Demo link
-https://boleto-checkout.herokuapp.com/
+https://boleto-checkout.herokuapp.com  
+
 Note: for test mode, you can use `000.000.000-00` for CNPJ/CPF field
 
 ## Running the sample
