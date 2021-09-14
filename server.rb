@@ -8,7 +8,7 @@ unless ENV['APP_ENV'] == 'production'
   Dotenv.load('.env')
 end
 Stripe.api_key = ENV['STRIPE_TEST_SECRET_KEY']
-Stripe.api_version = '2020-08-27;boleto_beta=v1'
+Stripe.api_version = '2020-08-27'
 ENVPOINT_SECRET = ENV['WEBHOOK_SIGNING_SECRET']
 
 set :static, true
