@@ -75,7 +75,7 @@ post '/create-checkout-session' do
     payment_method_types: %w[card boleto],
     payment_method_options: {
       boleto: {
-        expires_after_days: 14
+        expires_after_days: 3
       }
     },
     line_items: [{
@@ -94,7 +94,5 @@ post '/create-checkout-session' do
     cancel_url: YOUR_DOMAIN + '/cancel.html'
   )
 
-  {
-    id: session.id
-  }.to_json
+  redirect session.url, 303
 end
